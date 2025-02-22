@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Smooth page background */
+html {
+    font-size: 62.5%;
+    background: linear-gradient(135deg, #74b9ff, #0984e3);
+    height: 100%;
+}
+
+/* Center the quiz */
+.main-div {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Quiz Box */
+.inner-div {
+    width: 45vw;
+    background: white;
+    padding: 4rem 6rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.inner-div h2 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin: 1rem 0 4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: #0984e3;
+}
+
+/* Questions */
+.inner-div li {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: background 0.3s;
+}
+
+.inner-div li:hover {
+    background: rgba(116, 185, 255, 0.2);
+    transform: scale(1.02);
+}
+
+/* Input checkboxes */
+input {
+    cursor: pointer;
+    margin-right: 1rem;
+    transform: scale(1.2);
+}
+
+/* Buttons */
+#submit, .btn {
+    padding: 1.2rem 3rem;
+    outline: none;
+    font-size: 2rem;
+    display: block;
+    margin: auto;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(135deg, #74b9ff, #0984e3);
+    border-radius: 5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+#submit:hover, .btn:hover {
+    background: linear-gradient(135deg, #0984e3, #74b9ff);
+    transform: scale(1.05);
+}
+
+/* Score Section */
+#showScore {
+    background: #dfe6e9;
+    margin-top: 3rem;
+    padding: 3rem 4rem;
+    border-radius: 1rem;
+    box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.3);
+    animation: slideUp 1s ease-in-out;
+}
+
+.scoreArea {
+    display: none;
+}
+
+#showScore h3 {
+    font-size: 3rem;
+    text-align: center;
+    color: #0984e3;
+}
+
+/* Play Again Button */
+#showScore .btn {
+    margin-top: 2rem;
+    background: #c3f1e4;
+    color: black;
+    font-size: 1.8rem;
+}
+
+#showScore .btn:hover {
+    background: #057e5c;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
