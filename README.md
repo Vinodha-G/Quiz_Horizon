@@ -21,7 +21,7 @@ Clone this repository
 bash
 Copy
 Edit
-git clone https://github.com/your-username/quiz-app.git
+git clone [https://github.com/your-username/quiz-app.git](https://github.com/Vinodha-G/Quiz_Horizon/)
 Open index.html in a browser
 Enjoy the quiz! 🎉
 🎯 How to Contribute
@@ -31,6 +31,6 @@ Commit your changes: git commit -m "Add feature"
 Push to the branch: git push origin feature-name
 Open a Pull Request
 📩 Contact
-🔗 LinkedIn: Your Profile
+🔗 LinkedIn: www.linkedin.com/in/vinodhag
 📧 Email: vinodhaannapoorani@gmail.com
 
